@@ -39,10 +39,8 @@ class _MainHomeState extends State<MainHome>
         physics: const NeverScrollableScrollPhysics(),
         controller: tabController,
         children: [
-          Container(
-            color: AppColors.primaryBlue,
-          ),
           const HomePage(),
+          Container(),
           Container(),
           Container(),
           Container(),
