@@ -13,17 +13,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      designSize: const Size(375, 812),
-      builder: (BuildContext context, child) {
-        return MaterialApp(
-          title: 'Flutter Demo',
-          theme: ThemeData(
-       
-            primarySwatch: Colors.blue,
-          ),
-          home: const MainHome(),
-        );
-      }
-    );
+        designSize: const Size(375, 812),
+        builder: (BuildContext context, child) {
+          return MaterialApp(
+            title: 'Faramove',
+            debugShowCheckedModeBanner: false,
+            theme: ThemeData(
+              primarySwatch: Colors.blue,
+            ),
+            home: const MainHome(),
+          );
+        });
   }
 }
