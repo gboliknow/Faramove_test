@@ -9,4 +9,9 @@ class AppImages {
   static String notification = 'assets/images/Notification.png';
    static String caution = 'assets/images/caution.png';
     static String arrow = 'assets/images/arrow.png';
+    static String communityColoured = 'assets/images/Community_colored.png';
+    static String homeColoured = 'assets/images/Home_colored.png';
+    static String headset = 'assets/images/headset.png';
+    static String openbook = 'assets/images/openbook.png';
+    static String sethoscope = 'assets/images/sethoscope.png';
 }

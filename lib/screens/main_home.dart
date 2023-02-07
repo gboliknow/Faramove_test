@@ -53,23 +53,23 @@ class _MainHomeState extends State<MainHome>
         decoration: BoxDecoration(
           //Border.all
           color: AppColors.white,
-          boxShadow: const <BoxShadow>[
-            BoxShadow(
-              color: Colors.black,
-              offset: Offset(
-                5.0,
-                5.0,
-              ), //Offset
-              blurRadius: 10.0,
-              spreadRadius: 2.0,
-            ), //BoxShadow
-            BoxShadow(
-              color: Colors.white,
-              offset: Offset(0.0, 0.0),
-              blurRadius: 0.0,
-              spreadRadius: 0.0,
-            ), //BoxShadow
-          ],
+          // boxShadow: const <BoxShadow>[
+          //   BoxShadow(
+          //     color: Colors.black,
+          //     offset: Offset(
+          //       5.0,
+          //       5.0,
+          //     ), //Offset
+          //     blurRadius: 10.0,
+          //     spreadRadius: 2.0,
+          //   ), //BoxShadow
+          //   BoxShadow(
+          //     color: Colors.white,
+          //     offset: Offset(0.0, 0.0),
+          //     blurRadius: 0.0,
+          //     spreadRadius: 0.0,
+          //   ), //BoxShadow
+          // ],
         ),
         child: Padding(
           padding:
@@ -93,61 +93,46 @@ class _MainHomeState extends State<MainHome>
             items: [
               BottomNavigationBarItem(
                 backgroundColor: AppColors.white,
-                icon: Padding(
-                  padding: EdgeInsets.only(bottom: 5.r),
-                  child: BottomNavIcon(
-                    selectedIndex: _selectedIndex,
-                    selectedImage: AppImages.home,
-                    unSelectedImage: AppImages.home,
-                  ),
+                icon: BottomNavIcon(
+                  selectedIndex: _selectedIndex,
+                  selectedImage: AppImages.homeColoured,
+                  unSelectedImage: AppImages.home,
                 ),
                 label: 'Home',
               ),
               BottomNavigationBarItem(
                 backgroundColor: AppColors.white,
-                icon: Padding(
-                  padding: EdgeInsets.only(bottom: 5.r),
-                  child: BottomNavIcon(
-                    selectedIndex: _selectedIndex,
-                    selectedImage: AppImages.actions,
-                    unSelectedImage: AppImages.actions,
-                  ),
+                icon: BottomNavIcon(
+                  selectedIndex: _selectedIndex,
+                  selectedImage: AppImages.actions,
+                  unSelectedImage: AppImages.actions,
                 ),
                 label: 'Resources',
               ),
               BottomNavigationBarItem(
                 backgroundColor: AppColors.white,
-                icon: Padding(
-                  padding: EdgeInsets.only(bottom: 5.r),
-                  child: BottomNavIcon(
-                    selectedIndex: _selectedIndex,
-                    selectedImage: AppImages.calender,
-                    unSelectedImage: AppImages.calender,
-                  ),
+                icon: BottomNavIcon(
+                  selectedIndex: _selectedIndex,
+                  selectedImage: AppImages.calender,
+                  unSelectedImage: AppImages.calender,
                 ),
                 label: 'Session',
               ),
               BottomNavigationBarItem(
                 backgroundColor: AppColors.white,
-                icon: Padding(
-                  padding: EdgeInsets.only(bottom: 5.r),
-                  child: BottomNavIcon(
-                    selectedIndex: _selectedIndex,
-                    selectedImage: AppImages.community,
-                    unSelectedImage: AppImages.community,
-                  ),
+                icon: BottomNavIcon(
+                  selectedIndex: _selectedIndex,
+                  selectedImage: AppImages.communityColoured,
+                  unSelectedImage: AppImages.community,
                 ),
                 label: 'Community',
               ),
               BottomNavigationBarItem(
                 backgroundColor: AppColors.white,
-                icon: Padding(
-                  padding: EdgeInsets.only(bottom: 5.r),
-                  child: BottomNavIcon(
-                    selectedIndex: _selectedIndex,
-                    selectedImage: AppImages.profile,
-                    unSelectedImage: AppImages.profile,
-                  ),
+                icon: BottomNavIcon(
+                  selectedIndex: _selectedIndex,
+                  selectedImage: AppImages.profile,
+                  unSelectedImage: AppImages.profile,
                 ),
                 label: 'Account',
               ),
