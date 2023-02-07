@@ -17,5 +17,12 @@ class AppImages {
   static String letterbox = 'assets/images/letterbox.png';
   static String person = 'assets/images/person.png';
   static String useofdrug = 'assets/images/useofdrug.png';
+  static String useofdrug1 = 'assets/images/useofdrug1.png';
+  static String useofdrug2 = 'assets/images/useofdrug2.png';
+  static String theraphy = 'assets/images/theraphy.png';
   static String search = 'assets/images/search.png';
+  static String image1 = 'assets/images/image1.png';
+  static String image3 = 'assets/images/image3.png';
+  static String image2 = 'assets/images/image2.png';
+  static String image4 = 'assets/images/image4.png';
 }

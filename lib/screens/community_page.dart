@@ -7,6 +7,7 @@ class CommunityPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.white,
       appBar: AppBar(
         backgroundColor: AppColors.white,
         elevation: 1,
@@ -34,12 +35,46 @@ class CommunityPage extends StatelessWidget {
           )
         ],
       ),
-      body: Column(
+      body: ListView(
         children: <Widget>[
           SizedBox(
             height: 22.h,
           ),
-          const CommunityCard()
+          CommunityCard(
+            image: AppImages.useofdrug,
+            text: 'Talks about treatment, Pathways',
+          ),
+          SizedBox(
+            height: 22.h,
+          ),
+          CommunityCard(
+            image: AppImages.useofdrug1,
+            text: 'How was your first session experiencee?',
+          ),
+          SizedBox(
+            height: 22.h,
+          ),
+          CommunityCard(
+            image: AppImages.useofdrug2,
+            text: 'How to live with cancer and be mentally stable .',
+          ),
+          SizedBox(
+            height: 22.h,
+          ),
+          CommunityCard(
+            image: AppImages.theraphy,
+            text: 'Is reliance on drugs a good thing?',
+          ),
+          SizedBox(
+            height: 22.h,
+          ),
+          CommunityCard(
+            image: AppImages.useofdrug,
+            text: 'Talks about treatment, Pathways',
+          ),
+          SizedBox(
+            height: 22.h,
+          ),
         ],
       ),
     );
