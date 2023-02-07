@@ -1,5 +1,6 @@
 import 'package:faramove_test/components/constants/app_images.dart';
 import 'package:faramove_test/components/widget/apptext.dart';
+import 'package:faramove_test/components/widget/secondaryhomecard.dart';
 import 'package:faramove_test/theme/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -10,6 +11,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.white,
       appBar: AppBar(
         backgroundColor: AppColors.white,
         elevation: 0,
@@ -102,6 +104,24 @@ class HomePage extends StatelessWidget {
               height: 17 / 12,
               color: AppColors.wellnessBlack,
             ),
+          ),
+          const Spacer(),
+          Divider(
+            color: AppColors.backgroundColor,
+            thickness: 4,
+            height: 4.h,
+          ),
+          const SecondaryHomeContainer(
+            text: 'Upcoming Session (0)',
+          ),
+          Divider(
+            color: AppColors.backgroundColor,
+            thickness: 4,
+            height: 4.h,
+          ),
+          const SecondaryHomeContainer(
+            text: 'Tips to stay healthy',
+            subtext: 'Get simple health tips.',
           ),
         ],
       ),
