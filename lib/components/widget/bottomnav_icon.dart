@@ -4,17 +4,20 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 class BottomNavIcon extends StatelessWidget {
   const BottomNavIcon({
     super.key,
-    required int selectedIndex, required this.selectedImage, required this.unSelectedImage,
-  }) : _selectedIndex = selectedIndex;
+    
+    required this.selectedImage,
+    required this.unSelectedImage, required this.isSelected,
+  }) ;
 
-  final int _selectedIndex;
+
   final String selectedImage;
   final String unSelectedImage;
+  final bool isSelected;
 
   @override
   Widget build(BuildContext context) {
     return Image.asset(
-      _selectedIndex == 0 ? selectedImage : unSelectedImage,
+     isSelected? selectedImage : unSelectedImage,
       height: 16.h,
       width: 16.w,
     );

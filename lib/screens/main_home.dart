@@ -49,25 +49,7 @@ class _MainHomeState extends State<MainHome>
       bottomNavigationBar: Container(
         height: 90.h,
         decoration: BoxDecoration(
-          //Border.all
-          color: AppColors.white,
-          // boxShadow: const <BoxShadow>[
-          //   BoxShadow(
-          //     color: Colors.black,
-          //     offset: Offset(
-          //       5.0,
-          //       5.0,
-          //     ), //Offset
-          //     blurRadius: 10.0,
-          //     spreadRadius: 2.0,
-          //   ), //BoxShadow
-          //   BoxShadow(
-          //     color: Colors.white,
-          //     offset: Offset(0.0, 0.0),
-          //     blurRadius: 0.0,
-          //     spreadRadius: 0.0,
-          //   ), //BoxShadow
-          // ],
+          color: AppColors.backgroundColor,
         ),
         child: Padding(
           padding:
@@ -87,48 +69,48 @@ class _MainHomeState extends State<MainHome>
             ),
             showSelectedLabels: true,
             showUnselectedLabels: true,
-            backgroundColor: AppColors.white,
+            backgroundColor: AppColors.backgroundColor,
             items: [
               BottomNavigationBarItem(
-                backgroundColor: AppColors.white,
+                backgroundColor: AppColors.backgroundColor,
                 icon: BottomNavIcon(
-                  selectedIndex: _selectedIndex,
                   selectedImage: AppImages.homeColoured,
                   unSelectedImage: AppImages.home,
+                  isSelected: _selectedIndex == 0,
                 ),
                 label: 'Home',
               ),
               BottomNavigationBarItem(
-                backgroundColor: AppColors.white,
+                backgroundColor: AppColors.backgroundColor,
                 icon: BottomNavIcon(
-                  selectedIndex: _selectedIndex,
+                  isSelected: _selectedIndex == 1,
                   selectedImage: AppImages.actions,
                   unSelectedImage: AppImages.actions,
                 ),
                 label: 'Resources',
               ),
               BottomNavigationBarItem(
-                backgroundColor: AppColors.white,
+                backgroundColor: AppColors.backgroundColor,
                 icon: BottomNavIcon(
-                  selectedIndex: _selectedIndex,
+                  isSelected: _selectedIndex == 2,
                   selectedImage: AppImages.calender,
                   unSelectedImage: AppImages.calender,
                 ),
                 label: 'Session',
               ),
               BottomNavigationBarItem(
-                backgroundColor: AppColors.white,
+                backgroundColor: AppColors.backgroundColor,
                 icon: BottomNavIcon(
-                  selectedIndex: _selectedIndex,
+                  isSelected: _selectedIndex == 3,
                   selectedImage: AppImages.communityColoured,
                   unSelectedImage: AppImages.community,
                 ),
                 label: 'Community',
               ),
               BottomNavigationBarItem(
-                backgroundColor: AppColors.white,
+                backgroundColor: AppColors.backgroundColor,
                 icon: BottomNavIcon(
-                  selectedIndex: _selectedIndex,
+                  isSelected: _selectedIndex == 4,
                   selectedImage: AppImages.profile,
                   unSelectedImage: AppImages.profile,
                 ),
