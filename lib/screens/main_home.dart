@@ -1,5 +1,6 @@
 import 'package:faramove_test/components/constants/app_images.dart';
 import 'package:faramove_test/components/widget/bottomnav_icon.dart';
+import 'package:faramove_test/screens/community_page.dart';
 import 'package:faramove_test/screens/home_page.dart';
 import 'package:faramove_test/theme/app_colors.dart';
 import 'package:flutter/material.dart';
@@ -42,7 +43,7 @@ class _MainHomeState extends State<MainHome>
           const HomePage(),
           Container(),
           Container(),
-          Container(),
+          const CommunityPage(),
           Container(),
         ],
       ),
