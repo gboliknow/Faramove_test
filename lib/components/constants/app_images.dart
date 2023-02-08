@@ -25,4 +25,12 @@ class AppImages {
   static String image3 = 'assets/images/image3.png';
   static String image2 = 'assets/images/image2.png';
   static String image4 = 'assets/images/image4.png';
+  static String share = 'assets/images/share.png';
+  static String bookmark = 'assets/images/bookmark.png';
+  static String dropdown = 'assets/images/dropdown.png';
+  static String link = 'assets/images/link.png';
+  static String speaker = 'assets/images/Speaker.png';
+  static String backward = 'assets/images/backward.png';
+  static String foward = 'assets/images/foward.png';
+  static String st = 'assets/images/st.png';
 }

@@ -2,6 +2,7 @@ import 'package:faramove_test/components/constants/app_images.dart';
 import 'package:faramove_test/components/widget/apptext.dart';
 import 'package:faramove_test/components/widget/primarycard.dart';
 import 'package:faramove_test/components/widget/secondaryhomecard.dart';
+import 'package:faramove_test/screens/musicplayer_page.dart';
 import 'package:faramove_test/theme/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -33,16 +34,16 @@ class HomePage extends StatelessWidget {
         actions: <Widget>[
           Image.asset(
             AppImages.chatOutline,
-            height: 32.r,
-            width: 32.r,
+            height: 22.r,
+            width: 22.r,
           ),
           SizedBox(
             width: 16.w,
           ),
           Image.asset(
             AppImages.notification,
-            height: 32.r,
-            width: 32.r,
+            height: 22.r,
+            width: 22.r,
           ),
           SizedBox(
             width: 20.w,
@@ -137,6 +138,13 @@ class HomePage extends StatelessWidget {
               color: AppColors.purple,
               image: AppImages.headset,
               subtextColor: AppColors.lightPurple,
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const MusicPlayerPage()),
+                );
+              },
             ),
             SizedBox(
               height: 20.h,
